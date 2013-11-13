@@ -13,7 +13,9 @@ my $builder = Module::Build->new(
     requires => {
         'App::ColorNamer'                       => 0.0102,
         'POE::Component::IRC::Plugin::BaseWrap' => 0.009,
+        'perl' => '5.006',
     },
+    configure_requires => { 'Module::Build' => 0 },
     add_to_cleanup      => [ 'POE-Component-IRC-Plugin-ColorNamer-*' ],
     create_makefile_pl => 'traditional',
 );

@@ -2,7 +2,7 @@ package POE::Component::IRC::Plugin::ColorNamer;
 
 use warnings;
 use strict;
-our $VERSION = '0.0101';
+our $VERSION = '0.0102';
 
 use App::ColorNamer;
 use base 'POE::Component::IRC::Plugin::BaseWrap';
@@ -41,6 +41,9 @@ sub _make_response_message {
 sub _message_into_response_event { 'result' }
 
 1;
+__END__
+
+=encoding utf8
 
 =head1 NAME
 

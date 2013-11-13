@@ -5,8 +5,9 @@ author:
 build_requires:
   Test::More: 0
 configure_requires:
-  Module::Build: 0.36
-generated_by: 'Module::Build version 0.3607'
+  Module::Build: 0
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -15,10 +16,11 @@ name: POE-Component-IRC-Plugin-ColorNamer
 provides:
   POE::Component::IRC::Plugin::ColorNamer:
     file: lib/POE/Component/IRC/Plugin/ColorNamer.pm
-    version: 0.0101
+    version: 0.0102
 requires:
   App::ColorNamer: 0.0102
   POE::Component::IRC::Plugin::BaseWrap: 0.009
+  perl: 5.006
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.0101
+version: 0.0102
